@@ -1,4 +1,4 @@
-package Task_1;
+package Task_1_2_4;
 
 public class Perhitungan {
     private static Balok sisi;
@@ -7,22 +7,24 @@ public class Perhitungan {
         int panjang = sisi.getPanjang();
         int lebar = sisi.getLebar();
         int tinggi = sisi.getTinggi();
-        luas(panjang, lebar, tinggi);
+        volume(panjang, lebar, tinggi);
 
         int panjangV = sisi.getPanjang();
         int lebarV = sisi.getLebar();
         int tinggiV = sisi.getTinggi();
-        volume(panjangV, lebarV, tinggiV);
+        luas(panjangV, lebarV, tinggiV);
+
     }
 
-    public int luas(int panjang, int lebar, int tinggi) {
+    public int luas(int panjangV, int lebarV, int tinggiV) {
         int luas;
-        return luas = panjang * lebar * tinggi;
+        return luas = 4 * panjangV * lebarV * tinggiV;
     }
 
-    public int volume(int panjangV, int lebarV, int tinggiV) {
+    public int volume(int panjang, int lebar, int tinggi) {
         int volume;
-        return volume = 4 * panjangV * lebarV * tinggiV;
+        return volume = panjang * lebar * tinggi;
+
     }
 
 }

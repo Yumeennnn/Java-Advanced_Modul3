@@ -1,4 +1,4 @@
-package Task_1;
+package Task_1_2_4;
 
 public class Balok{
     private int panjang;
@@ -31,8 +31,8 @@ public class Balok{
 
     protected void Result(){
         Perhitungan ph = new Perhitungan();
-        System.out.println("Hasil Luas Balok: " +ph.luas(panjang,lebar,tinggi));
-        System.out.println("Hasil Volume Balok: " +ph.volume(panjang,lebar,tinggi));
+        System.out.println("Hasil Luas Balok\t: " +ph.luas(panjang,lebar,tinggi)+ " cm");
+        System.out.println("Hasil Volume Balok\t: " +ph.volume(panjang,lebar,tinggi) +" cm3");
     }
 
 }

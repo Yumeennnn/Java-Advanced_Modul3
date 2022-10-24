@@ -31,11 +31,8 @@ public class Balok{
 
     protected void Result(){
         Perhitungan ph = new Perhitungan();
-        System.out.println("Hasil Luas Balok: " +ph.luas(this));
-        System.out.println("Hasil Volume Balok: " +ph.volume(this));
+        System.out.println("Hasil Luas Balok: " +ph.luas(panjang,lebar,tinggi));
+        System.out.println("Hasil Volume Balok: " +ph.volume(panjang,lebar,tinggi));
     }
 
-    public static void main(String[] args) {
-
-    }
 }

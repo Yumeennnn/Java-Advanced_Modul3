@@ -2,21 +2,27 @@ package Task_1;
 
 public class Perhitungan {
     private static Balok sisi;
-    public static final int Panjang = sisi.getPanjang();
 
-    void perhitungan(Balok sisi){
-        int i = 5;
-        int panjang = Panjang;
+    void perhitungan(){
+        int panjang = sisi.getPanjang();
         int lebar = sisi.getLebar();
         int tinggi = sisi.getTinggi();
-        int luas = i;
-        luas = panjang * lebar * tinggi;
+        luas(panjang, lebar, tinggi);
 
-        int l = 10;
         int panjangV = sisi.getPanjang();
         int lebarV = sisi.getLebar();
         int tinggiV = sisi.getTinggi();
-        int volume = l;
-        volume = 4 * panjangV *lebarV *tinggiV;
+        volume(panjangV, lebarV, tinggiV);
     }
+
+    public int luas(int panjang, int lebar, int tinggi) {
+        int luas;
+        return luas = panjang * lebar * tinggi;
+    }
+
+    public int volume(int panjangV, int lebarV, int tinggiV) {
+        int volume;
+        return volume = 4 * panjangV * lebarV * tinggiV;
+    }
+
 }

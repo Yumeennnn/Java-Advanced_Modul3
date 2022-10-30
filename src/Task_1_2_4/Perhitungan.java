@@ -7,15 +7,18 @@ public class Perhitungan {
         int panjang = sisi.getPanjang();
         int lebar = sisi.getLebar();
         int tinggi = sisi.getTinggi();
-        volume(panjang, lebar, tinggi);
+        //Before Refactoring luas = panjang * lebar * tinggi;
+        luas(panjang, lebar, tinggi);
 
         int panjangV = sisi.getPanjang();
         int lebarV = sisi.getLebar();
         int tinggiV = sisi.getTinggi();
-        luas(panjangV, lebarV, tinggiV);
+        //Before Refactoring volume = 4 * panjang * lebar * tinggi;
+        volume(panjangV, lebarV, tinggiV);
 
     }
 
+    //After Refactoring
     public int luas(int panjangV, int lebarV, int tinggiV) {
         int luas;
         return luas = 4 * panjangV * lebarV * tinggiV;

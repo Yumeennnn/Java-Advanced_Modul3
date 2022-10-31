@@ -8,12 +8,12 @@ public class Perhitungan {
         Volume(Sisi);
     }
 
-    public long Volume(Balok sisi) {
+    public long Luas(Balok sisi) {
         long volume;
         return volume = 4 * sisi.getPanjang() * sisi.getLebar() * sisi.getTinggi();
     }
 
-    static long Luas(Balok sisi) {
+    static long Volume(Balok sisi) {
         long luas;
         return luas = sisi.getPanjang() * sisi.getLebar() * sisi.getTinggi();
     }

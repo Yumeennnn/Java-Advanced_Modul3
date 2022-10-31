@@ -6,21 +6,21 @@ public class Drivers {
     static int Panjang, Lebar, Tinggi;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Balok result = new Balok();
+        Balok b = new Balok();
         Perhitungan p = new Perhitungan();
 
         System.out.print("Masukkan Panjang : ");
         Panjang = input.nextInt();
-        result.setPanjang(Panjang);
+        b.setPanjang(Panjang);
 
         System.out.print("Masukkan Lebar   : ");
         Lebar = input.nextInt();
-        result.setLebar(Lebar);
+        b.setLebar(Lebar);
 
         System.out.print("Masukkan Tinggi  : ");
         Tinggi = input.nextInt();
-        result.setTinggi(Tinggi);
-        result.Hasil();
-        System.out.println("Balok Is " +result.isCubes(p.Luas(result)));
+        b.setTinggi(Tinggi);
+        b.Hasil();
+        System.out.println("Balok Is " +b.isCubes(p.Luas(b)));
     }
 }
